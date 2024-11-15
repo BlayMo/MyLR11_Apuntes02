@@ -18,5 +18,11 @@
 
 7. Run "php db:seed TiposSeeder".
     
+<h3>Software</h3>
+
+	- Laravel 11.
+	- Datatbles.net
+	- Yajra Laravel DataTables.
+	- Bootstrap 5.3.3
 
 November, 2024
