@@ -1,6 +1,4 @@
-# MyLR11_Apuntes02
-
- <h1>LARAVEL 11</h1>
+<h1>LARAVEL 11</h1>
 
 <h2>Simple Laravel 11, Datatables and Bootstrap 5.3.3 integration exercise.</h2>
 
