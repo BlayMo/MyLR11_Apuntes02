@@ -20,7 +20,7 @@
 
 <h3>Important:</h3>
 
-    The project does not include user management.
+    <p>The project does not include user management.</p>
     
 
 November, 2024
