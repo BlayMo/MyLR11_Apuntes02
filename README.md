@@ -21,5 +21,6 @@
 <h3>Important:</h3>
 
     The project does not include user management.
+    
 
 November, 2024
