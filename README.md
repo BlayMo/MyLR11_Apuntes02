@@ -17,10 +17,6 @@
 6. Run "php db:seed  ApuntesSeeder".
 
 7. Run "php db:seed TiposSeeder".
-
-<h3>Important:</h3>
-
-    <p>The project does not include user management.</p>
     
 
 November, 2024
