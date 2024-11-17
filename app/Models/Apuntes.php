@@ -29,7 +29,7 @@
  * 
  *   This content is released under the MIT License (MIT)
  * 
- *   @Proyecto: MyLRXX_XXXXX
+ *   @Proyecto: MyLR11_Apuntes02
  *   @Autor:    BlayMo
  *   @Objeto:   Aprendizaje/Desarrollo 
  *   @Comienzo: XX-XX-24
@@ -40,7 +40,7 @@
  * 
  *   @mail: expresoweb2019@gmail.com
  * 
- *   PHP 8.2.X + LaravelXX + Breeze
+ *   PHP 8.2.1 + Laravel 11
  *   Script creado el 11-11-2024
  
  * 
@@ -50,14 +50,38 @@ namespace App\Models;
 
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
+use Illuminate\Database\Eloquent\SoftDeletes;
 
-
+/**
+ * Class Apuntes
+ * 
+ * @property int $id_apunte
+ * @property int|null $id_tipo
+ * @property string|null $concepto
+ * @property float|null $cobros
+ * @property float|null $pagos
+ * @property string|null $dia
+ * @property string|null $mes
+ * @property string|null $ano
+ * @property Carbon|null $created_at
+ * @property Carbon|null $updated_at
+ * @property string|null $deleted_at
+ *
+ * @package App\Models
+ */
+ 
 class Apuntes extends Model {
-    
+
+    use SoftDeletes;
     use HasFactory;
 
     protected $table      = 'apuntes';
     protected $primaryKey = 'id_apunte';
+    protected $casts = [
+        'id_tipo' => 'int',
+        'cobros'  => 'float',
+        'pagos'   => 'float'
+    ];
     protected $fillable = [
         'id_tipo',
         'concepto',
@@ -65,7 +89,6 @@ class Apuntes extends Model {
         'pagos',
         'dia',
         'mes',
-        'ano',
+        'ano'
     ];
-       
 }

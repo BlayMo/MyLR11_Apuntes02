@@ -29,7 +29,7 @@
  * 
  *   This content is released under the MIT License (MIT)
  * 
- *   @Proyecto: MyLRXX_XXXXX
+ *   @Proyecto: MyLR11_Apuntes02
  *   @Autor:    BlayMo
  *   @Objeto:   Aprendizaje/Desarrollo 
  *   @Comienzo: XX-XX-24
@@ -40,7 +40,7 @@
  * 
  *   @mail: expresoweb2019@gmail.com
  * 
- *   PHP 8.2.X + LaravelXX + Breeze
+ *   PHP 8.2.1 + Laravel 11
  *   Script creado el 12-11-2024
  *   
  * 
@@ -51,18 +51,28 @@ namespace App\Models;
 
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
+use Illuminate\Database\Eloquent\SoftDeletes;
 
+/**
+ * Class Tipos
+ * 
+ * @property int $id_tipo
+ * @property string|null $tipo
+ * @property Carbon|null $created_at
+ * @property Carbon $updated_at
+ * @property string|null $deleted_at
+ *
+ * @package App\Models
+ */
 
 class Tipos extends Model {
 
     use HasFactory;
+    use SoftDeletes;
 
     protected $table      = 'tipos';
     protected $primaryKey = 'id_tipo';
-    
     protected $fillable = [
-        'tipo',
+        'tipo'
     ];
-    
-   
 }

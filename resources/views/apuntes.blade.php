@@ -29,7 +29,7 @@
  * 
  *   This content is released under the MIT License (MIT)
  * 
- *   @Proyecto: MyLRXX_XXXXX
+ *   @Proyecto: MyLR11_Apuntes02
  *   @Autor:    BlayMo
  *   @Objeto:   Aprendizaje/Desarrollo 
  *   @Comienzo: XX-XX-24
@@ -40,7 +40,7 @@
  * 
  *   @mail: expresoweb2019@gmail.com
  * 
- *   PHP 8.2.X + LaravelXX + Breeze
+ *   PHP 8.2.1 + Laravel 11
  *   Script creado el 11-11-2024
  */
 
@@ -65,6 +65,7 @@ else {
         <link rel="icon" type="image/x-icon" href="<?= $assets ?>/assets/gal_favicon-32x32.png" />
         <!-- Core theme CSS (includes Bootstrap)-->
         <link href="<?= $assets ?>/css/bootstrap.min.css" rel="stylesheet" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
         <link href="https://cdn.datatables.net/1.11.4/css/dataTables.bootstrap5.min.css" rel="stylesheet">
         <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
         <script src="https://cdn.datatables.net/1.11.4/js/jquery.dataTables.min.js"></script>
@@ -118,7 +119,7 @@ else {
         <footer class="py-5 bg-primary mt-5">
             <div class="container">
                 <p class="m-0 text-center text-white">Copyright &copy; {{ config('app.name', 'Laravel') }}, November, 2024</p>
-                <p class="m-0 text-center text-white"><small> <a href="https://startbootstrap.com/" target="_blank">Templates</a></small>
+                <p class="m-0 text-center text-white"><small> <a href="https://startbootstrap.com/" target="_blank">Templates of startbootstrap.com</a></small>
             </div>
         </footer>
         <!-- Bootstrap core JS-->

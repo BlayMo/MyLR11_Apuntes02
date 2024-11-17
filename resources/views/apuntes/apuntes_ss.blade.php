@@ -29,7 +29,7 @@
  * 
  *   This content is released under the MIT License (MIT)
  * 
- *   @Proyecto: MyLRXX_XXXXX
+ *   @Proyecto: MyLR11_Apuntes02
  *   @Autor:    BlayMo
  *   @Objeto:   Aprendizaje/Desarrollo 
  *   @Comienzo: XX-XX-24
@@ -40,7 +40,7 @@
  * 
  *   @mail: expresoweb2019@gmail.com
  * 
- *   PHP 8.2.X + LaravelXX + Breeze
+ *   PHP 8.2.1 + Laravel 11
  *   Script creado el 12-11-2024
  *   
  * 
@@ -91,7 +91,7 @@
                             <th style="text-align:center">Dia</th>
                             <th style="text-align:center">Mes</th>
                             <th style="text-align:center">A&ntilde;o</th>
-                            <th style="text-align:center" >Opciones</th>
+                            <th style="text-align:center" width="25%">Opciones</th>
                         </tr>
                     </thead>
                     <tfoot>

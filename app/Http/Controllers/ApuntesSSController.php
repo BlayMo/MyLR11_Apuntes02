@@ -29,7 +29,7 @@
  * 
  *   This content is released under the MIT License (MIT)
  * 
- *   @Proyecto: MyLRXX_XXXXX
+ *   @Proyecto: MyLR11_Apuntes02
  *   @Autor:    BlayMo
  *   @Objeto:   Aprendizaje/Desarrollo 
  *   @Comienzo: XX-XX-24
@@ -40,7 +40,7 @@
  * 
  *   @mail: expresoweb2019@gmail.com
  * 
- *   PHP 8.2.X + LaravelXX + Breeze
+ *   PHP 8.2.1 + Laravel 11
  *   Script creado el 12-11-2024
  *   
  * 
@@ -99,9 +99,9 @@ class ApuntesSSController extends Controller {
     
     private function btn($row){
         $cad  = '';       
-        $cad .= '<a class="btn btn-info btn-sm  mx-2" href="'.route('apuntes.show',$row->id_apunte).'"><i class="fa-solid fa-list"></i> Show</a>';
-        $cad .= '<a class="btn btn-primary btn-sm  mx-2" href="'.route('apuntes.edit',$row->id_apunte).'"><i class="fa-solid fa-pen-to-square"></i> Edit</a>';
-        $cad .= '<a class="btn btn-danger btn-sm  mx-2" href="'.route('apuntes_ss.borrar',$row->id_apunte).'"><i class="fa-solid fa-trash"></i> Del</a>';
+        $cad .= '<a class="btn btn-info btn-sm  mx-1" href="'.route('apuntes.show',$row->id_apunte).'"><i class="fa-solid fa-list"></i> Show</a>';
+        $cad .= '<a class="btn btn-primary btn-sm  mx-1" href="'.route('apuntes.edit',$row->id_apunte).'"><i class="fa-solid fa-pen-to-square"></i> Edit</a>';
+        $cad .= '<a class="btn btn-danger btn-sm  mx-1" href="'.route('apuntes_ss.borrar',$row->id_apunte).'"><i class="fa-solid fa-trash"></i> Del</a>';
         return $cad;
     }
 

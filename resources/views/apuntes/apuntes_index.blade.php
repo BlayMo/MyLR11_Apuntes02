@@ -29,7 +29,7 @@
  * 
  *   This content is released under the MIT License (MIT)
  * 
- *   @Proyecto: MyLRXX_XXXXX
+ *   @Proyecto: MyLR11_Apuntes02
  *   @Autor:    BlayMo
  *   @Objeto:   Aprendizaje/Desarrollo 
  *   @Comienzo: XX-XX-24
@@ -40,7 +40,7 @@
  * 
  *   @mail: expresoweb2019@gmail.com
  * 
- *   PHP 8.2.X + LaravelXX + Breeze
+ *   PHP 8.2.1 + Laravel 11
  *   Script creado el 11-11-2024
  
  */
@@ -89,7 +89,7 @@
                             <th style="text-align:center">Dia</th>
                             <th style="text-align:center">Mes</th>
                             <th style="text-align:center">Ano</th>
-                            <th style="text-align:center" >Opciones</th>
+                            <th style="text-align:center" width="25%" >Opciones</th>
                         </tr>
                     </thead>
                     <tbody>
@@ -106,8 +106,8 @@
 
                             <td style="text-align:center">
                                 <form action="{{ route('apuntes.destroy',$apuntes->id_apunte) }}" method="POST">
-                                    <a class="btn btn-info btn-sm  mx-2" href="{{ route('apuntes.show', $apuntes->id_apunte) }}"><i class="fa-solid fa-list"></i> Show</a>
-                                    <a class="btn btn-primary btn-sm  mx-2" href="{{ route('apuntes.edit',$apuntes->id_apunte) }}"><i class="fa-solid fa-pen-to-square"></i> Edit</a>
+                                    <a class="btn btn-info btn-sm  mx-1" href="{{ route('apuntes.show', $apuntes->id_apunte) }}"><i class="fa-solid fa-list"></i> Show</a>
+                                    <a class="btn btn-primary btn-sm  mx-1" href="{{ route('apuntes.edit',$apuntes->id_apunte) }}"><i class="fa-solid fa-pen-to-square"></i> Edit</a>
                                     @csrf
                                     @method('DELETE')
                                     <button type="submit" class="btn btn-danger btn-sm"><i class="fa-solid fa-trash"></i> Delete</button>
